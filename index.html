@@ -5,31 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
+    <title>项目展示</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/doc.css">
-
+    <link rel="stylesheet" href="css/index.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+
+    </style>
 </head>
-<body style=" padding-top: 70px; ">
-<div class="container-fluid">
-    <div class="span3 bs-docs-sidebar">
+<body>
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="container">-->
+        <!--<ul class="nav nav-tabs">-->
+            <!--<li role="presentation" class="active"><a href="#">Home</a></li>-->
+            <!--<li role="presentation"><a href="#">Profile</a></li>-->
+            <!--<li role="presentation"><a href="#">Messages</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
+<div class="container">
+    <div class="col-sm-3 bs-docs-sidebar hidden-xs">
         <ul class="nav nav-list bs-docs-sidenav affix">
-            <li class="active"><a href="#dropdowns"><i class="icon-chevron-right"></i> 下拉菜单</a></li>
-            <li class=""><a href="#buttonGroups"><i class="icon-chevron-right"></i> 按钮组</a></li>
-            <li><a href="#buttonDropdowns"><i class="icon-chevron-right"></i> 按钮下拉菜单</a></li>
-            <li class=""><a href="#navs"><i class="icon-chevron-right"></i> 导航</a></li>
-            <li><a href="#navbar"><i class="icon-chevron-right"></i> 导航条</a></li>
-            <li><a href="#breadcrumbs"><i class="icon-chevron-right"></i> 面包屑(路径式)导航</a></li>
-            <li><a href="#pagination"><i class="icon-chevron-right"></i> 分页</a></li>
-            <li class=""><a href="#labels-badges"><i class="icon-chevron-right"></i> 标签和标记</a></li>
+            <li class="active"><a href="#qianduan"><i class="icon-chevron-right"></i> 前端</a></li>
+            <li class=""><a href="#qianduan"><i class="icon-chevron-right"></i> 切图</a></li>
+            <li><a href="#dome1"><i class="icon-chevron-right"></i> 移动端项目</a></li>
+            <li class=""><a href="#JavaScript"><i class="icon-chevron-right"></i> JavaScript</a></li>
+            <li><a href="#css3"><i class="icon-chevron-right"></i> css3</a></li>
+            <li class="active"><a href="#php"><i class="icon-chevron-right"></i> php</a></li>
+            <li><a href="#php"><i class="icon-chevron-right"></i>php版博客项目系统</a></li>
+            <li class=""><a href="#labels-badges"><i class="icon-chevron-right"></i> smarty仿写项目</a></li>
             <li><a href="#typography"><i class="icon-chevron-right"></i> 排版</a></li>
             <li class=""><a href="#thumbnails"><i class="icon-chevron-right"></i> 缩略项</a></li>
             <li><a href="#alerts"><i class="icon-chevron-right"></i> 警告对话框</a></li>
@@ -38,16 +50,8 @@
             <li class=""><a href="#misc"><i class="icon-chevron-right"></i> 杂项</a></li>
         </ul>
     </div>
-    <div class="span9">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">Profile</a></li>
-                    <li role="presentation"><a href="#">Messages</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div class="col-sm-9">
+
         <div class="jumbotron">
             <h1>Hello, world!</h1>
 
@@ -55,64 +59,457 @@
 
             <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
         </div>
-        <h3>Example heading <span class="label label-default">New</span></h3>
 
+        <!--前端-->
+        <h3 id="qianduan">切图<span class="badge badge-info">hot</span></h3>
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="img/1.jpg" alt="...">
-
+                    <a href="http://www.phpshow.com/arch/address.html"> <img src="img/1.png" alt="个人中心"></a>
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>个人中心</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo4" >详情</a>
+                            <a href="http://www.phpshow.com/arch/address.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo4" class="panel-collapse collapse ">
+                            个人中心
+                        </p>
 
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
-                                                                                           class="btn btn-default"
-                                                                                           role="button">Button</a></p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="img/1.jpg" alt="...">
+                    <a href="http://www.phpshow.com/arch/address.html"> <img src="img/2.png" alt="登录界面"></a>
 
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
-
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
-                                                                                           class="btn btn-default"
-                                                                                           role="button">Button</a></p>
+                        <h3>登录界面</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo5" >详情</a>
+                            <a href="http://www.phpshow.com/arch/address.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo5" class="panel-collapse collapse">
+                            登录界面
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="img/1.jpg" alt="...">
+                    <a href="http://www.phpshow.com/arch/address.html"> <img src="img/3.png" alt="登录界面"></a>
 
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>详情页</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo6" >详情</a>
+                            <a href="http://www.phpshow.com/arch/address.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo6" class="panel-collapse collapse">
+                            详情页
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/jd"> <img src="img/5.png" alt="登录界面"></a>
 
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida
-                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#"
-                                                                                           class="btn btn-default"
-                                                                                           role="button">Button</a></p>
+                    <div class="caption">
+                        <h3>详情页</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo7" >详情</a>
+                            <a href="http://www.phpshow.com/jd"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo7" class="panel-collapse collapse">
+                            详情页
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--css3-->
+        <h3 id="css3">css3<span class="badge badge-info">hot</span></h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.siyuweb.com/demo/css3/denglong/denglong.html"> <img src="img/6.png" alt="个人中心"></a>
+                    <div class="caption">
+                        <h3>点灯笼</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo8" >详情</a>
+                            <a href="http://www.siyuweb.com/demo/css3/denglong/denglong.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo8" class="panel-collapse collapse ">
+                            点灯笼
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/arch/address.html"> <img src="img/2.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>登录界面</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo5" >详情</a>
+                            <a href="http://www.phpshow.com/arch/address.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo5" class="panel-collapse collapse">
+                            登录界面
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/arch/address.html"> <img src="img/3.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>详情页</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo6" >详情</a>
+                            <a href="http://www.phpshow.com/arch/address.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo6" class="panel-collapse collapse">
+                            详情页
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/jd"> <img src="img/5.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>详情页</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo7" >详情</a>
+                            <a href="http://www.phpshow.com/jd"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo7" class="panel-collapse collapse">
+                            详情页
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end css3-->
+
+
+        <!--javascript-->
+        <h3 id="JavaScript">JavaScript<span class="badge badge-info">hot</span></h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.siyuweb.com/demo/pubuliu/pubu.html"> <img src="img/7.png" alt="瀑布流"></a>
+                    <div class="caption">
+                        <h3>瀑布流</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo9" >详情</a>
+                            <a href="http://www.siyuweb.com/demo/pubuliu/pubu.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo9" class="panel-collapse collapse ">
+                            瀑布流<br>
+                            1、设置父级main的样式:水平居中。<br>
+                            2、设置每个块框pin的样式:绝对定位。<br>
+                            3、设置窗口滚动事件的监听函数:读取数据添加块框。
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.siyuweb.com/demo/jsdemo/xuanzeti/ajax.html"> <img src="img/8.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>模拟数据处理</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo10" >详情</a>
+                            <a href="http://www.siyuweb.com/demo/jsdemo/xuanzeti/ajax.html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo10" class="panel-collapse collapse">
+                            模拟数据处理
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.siyuweb.com/demo/jsdemo/lunbo(obj).html"> <img src="img/9.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>轮播(面向对象)</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo11" >详情</a>
+                            <a href="http://www.siyuweb.com/demo/jsdemo/lunbo(obj).html"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo11" class="panel-collapse collapse">
+                            轮播(面向对象)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/jd"> <img src="img/5.png" alt="登录界面"></a>
+
+                    <div class="caption">
+                        <h3>详情页</h3>
+                        <p>
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo7" >详情</a>
+                            <a href="http://www.phpshow.com/jd"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <p id="demo7" class="panel-collapse collapse">
+                            详情页
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end javascript-->
+        <!--end 前端-->
+
+
+        <!--php-->
+        <h3 id="php">php项目<span class="badge badge-info">hot</span></h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/demo1/" ><img src="img/4.png" alt="..."></a>
+
+                    <div class="caption">
+                        <h3>php版博客项目系统</h3>
+                        <p>
+                            <a class="btn btn-primary" role="button" data-toggle="collapse"  data-parent="#accordion" href="#demo3" >详情</a>
+
+                            <a href="http://www.phpshow.com/demo1/"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <!--<div id="demo" class="panel-collapse collapse in">-->
+                            <!--<h4>一. 用户系统</h4>-->
+                            <!--<p>1)	用户注册</p>-->
+                            <!--<p> 2)	用户登陆</p>-->
+                            <!--<p>3)	用户注销</p>-->
+                        <!--<h4> 二. 后台管理</h4>-->
+                            <!--<p> 1)	文章内容的添加,删除和修改-百度编辑器</p>-->
+                            <!--<p> 2)	回收站功能</p>-->
+                            <!--<p> 3)	栏目的添加,删除和修改</p>-->
+                            <!--<p> 4)	添加图片</p>-->
+                            <!--<h4> 三. 博客功能</h4>-->
+                            <!--<p> 5)	文章列表展示</p>-->
+                            <!--<p>  6)	分类列表展示</p>-->
+                            <!--<p> 7)	上一篇,下一篇</p>-->
+                            <!--<p>8)	文章自动提取第一个图片为缩略图,采用正则</p>-->
+                                <!--<h4> 四.采集功能:</h4>-->
+                            <!--<p>输入目标列表页的url,列表页正则规则,正文.标题正则规则,自动写入数据库,编辑后后发表于博客</p>-->
+                                    <!--<h4>  五	购物车</h4>-->
+                            <!--<p>1.购买1个或多个产品到购物车</p>-->
+                            <!--<p>2.针对用户id,登陆则保存为用户id,未登录则保存为sessionid</p>-->
+                            <!--<p> 3.增加.减少购物车内产品.删除功能</p>-->
+                                    <!--<h4>  六.聊天室</h4>-->
+                            <!--<p> 1.当前在线用户</p>-->
+                            <!--<p> 2.用户里先后删除用户信息</p>-->
+                                        <!--<h4> 相关环境:</h4>-->
+                            <!--<p> php5.3,apache,mysql,windows开发,linux部署.</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/1.jpg" alt="...">
+
+                    <div class="caption">
+                        <h3>smarty仿写项目</h3>
+                        <p>
+
+                            <a href="javascript:;" class="btn btn-primary" role="button" data-toggle="collapse" data-target="#demo2" data-parent="#accordion" >详情</a>
+
+                            <a href="#"  class="btn btn-default"  role="button">进入</a>
+
+                        </p>
+                        <!--<p id="demo2" class="panel-collapse collapse in">-->
+                            <!--自己仿写smarty,模板引擎.熟悉mvc模式-->
+                        <!--</p>-->
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="http://www.phpshow.com/ask/"><img src="img/1.jpg" alt="..."></a>
+
+                    <div class="caption">
+                        <h3>问答系统</h3>
+                        <p>
+                            <a class="btn btn-primary" role="button" data-toggle="collapse"  data-parent="#accordion" href="#demo3" >详情</a>
+
+                            <!--<a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#demo3">-->
+                                <!--Collapsible Group Item #1-->
+                            <!--</a>-->
+                            <a href="http://www.phpshow.com/ask/"  class="btn btn-default"  role="button">进入</a>
+                        </p>
+                        <!--<div id="demo3" class="panel-collapse collapse in">-->
+                           <!--<h4> 一、 界面:</h4>-->
+                            <!--<p>访微信界面,问答分两侧,不同颜色,可以给答案点赞.</p>-->
+                        <!--<h4> 二、 功能:</h4>-->
+                            <!--<p>1. 用户系统 </p>-->
+                            <!--<p> 1) 登录-->
+                            <!--2) 注册-->
+                            <!--3) 找回密码-->
+                            <!--4) 上传头像 <p>-->
+                            <!--<p> 2. 提问功能</p>-->
+                            <!--<p>1) 登录后可提问-->
+                            <!--2)对问题进行一次补充-->
+                            <!--3)上传图片-->
+                            <!--4)对答案进行追问-->
+                            <!--5)选择最佳答案</p>-->
+                            <!--<p> 3. 回答功能</p>-->
+                            <!--<p>1) 登录后可回答-->
+                            <!--2)对回答进行一次补充-->
+                            <!--3)上传图片</p>-->
+                            <!--<p>4. 用户中心</p>-->
+                            <!--<p>1) 登录后可进入-->
+                            <!--2)对自己的提问/回答进行查看或删除</p>-->
+                            <!--<p> 5. 管理中心 http://www.phpshow.com/ask/index.php/admin 账号 admin 密码 123</p>-->
+                            <!--<p> 1)管理员才可进入-->
+                            <!--2)可禁止用户发言-->
+                            <!--3)对问题/回答进行删除</p>-->
+                            <!--<h4> 三、 具体要求:</h4>-->
+                            <!--<p>用户系统:</p>-->
+                            <!--<p> 注册:-->
+                            <!--注册项:-->
+                             <!--1)用户名:不能包括空白符(空格和换行),非中文6位以上,中文1位以上.-->
+                                <!--2) 密码:6位以上,-->
+                                <!--3) 邮箱:合法邮箱-->
+                                <!--4) 注册后直接进入用户中心,在用户中心进行头像上传(非强制).-->
+                                <!--5) 用户名密码等必填-->
+                                <!--6)  邮箱格式合法-->
+                                <!--7) 密码和默认密码一致-->
+                                <!--8) 上传头像:</p>-->
+                            <!--<h4> 四、 相关环境:</h4>-->
+                            <!--<p> php5.3,apache,mysql,windows开发,linux部署.-->
+                            <!--使用thinkPhp框架,jquery框架,smarty模板.</p>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+
+            <!--zhedie-->
+
+
+
+<!--end zhedie-->
+        </div>
+        <!--end-->
+        <!--折叠-->
+
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <!--<div class="panel-heading">-->
+                    <!--<h4 class="panel-title">-->
+                        <!--<a data-toggle="collapse" data-parent="#accordion"-->
+                           <!--href="#collapseOne">-->
+                            <!--点击我进行展开，再次点击我进行折叠。第 1 部分-->
+                        <!--</a>-->
+                    <!--</h4>-->
+                <!--</div>-->
+                <div id="demo1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4>一. php版博客项目系统用户系统</h4>
+                        <p>1)	用户注册 2)	用户登陆3)	用户注销</p>
+                        <h4> 二. 后台管理</h4>
+                        <p> 1)	文章内容的添加,删除和修改-百度编辑器 2)	回收站功能  3)	栏目的添加,删除和修改 4)	添加图片</p>
+                        <h4> 三. 博客功能</h4>
+                        <p> 5)	文章列表展示  6)	分类列表展示 7)	上一篇,下一篇8)	文章自动提取第一个图片为缩略图,采用正则</p>
+                        <h4> 四.采集功能:</h4>
+                        <p>输入目标列表页的url,列表页正则规则,正文.标题正则规则,自动写入数据库,编辑后后发表于博客</p>
+                        <h4>  五	购物车</h4>
+                        <p>1.购买1个或多个产品到购物车2.针对用户id,登陆则保存为用户id,未登录则保存为sessionid 3.增加.减少购物车内产品.删除功能</p>
+                        <h4>  六.聊天室</h4>
+                        <p> 1.当前在线用户 2.用户里先后删除用户信息</p>
+                        <h4> 相关环境:</h4>
+                        <p> php5.3,apache,mysql,windows开发,linux部署.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+
+                <div id="demo2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        smarty仿写项目
+                        自己仿写smarty,模板引擎.熟悉mvc模式
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div id="demo3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4> 一、 界面:</h4>
+                        <p>访微信界面,问答分两侧,不同颜色,可以给答案点赞.</p>
+                        <h4> 二、 功能:</h4>
+                        <p>1. 用户系统 </p>
+                        <p> 1) 登录
+                        2) 注册
+                        3) 找回密码
+                        4) 上传头像 <p>
+                        <p> 2. 提问功能</p>
+                        <p>1) 登录后可提问
+                        2)对问题进行一次补充
+                        3)上传图片
+                        4)对答案进行追问
+                        5)选择最佳答案</p>
+                        <p> 3. 回答功能</p>
+                        <p>1) 登录后可回答
+                        2)对回答进行一次补充
+                        3)上传图片</p>
+                        <p>4. 用户中心</p>
+                        <p>1) 登录后可进入
+                        2)对自己的提问/回答进行查看或删除</p>
+                        <p> 5. 管理中心 http://www.phpshow.com/ask/index.php/admin 账号 admin 密码 123</p>
+                        <p> 1)管理员才可进入
+                        2)可禁止用户发言
+                        3)对问题/回答进行删除</p>
+                        <h4> 三、 具体要求:</h4>
+                        <p>用户系统:</p>
+                        <p> 注册:
+                        注册项:
+                        1)用户名:不能包括空白符(空格和换行),非中文6位以上,中文1位以上.
+                        2) 密码:6位以上,
+                        3) 邮箱:合法邮箱
+                        4) 注册后直接进入用户中心,在用户中心进行头像上传(非强制).
+                        5) 用户名密码等必填
+                        6)  邮箱格式合法
+                        7) 密码和默认密码一致
+                        8) 上传头像:</p>
+                        <h4> 四、 相关环境:</h4>
+                        <p> php5.3,apache,mysql,windows开发,linux部署.
+                        使用thinkPhp框架,jquery框架,smarty模板.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end 折叠-->
+
     </div>
 </div>
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.1.11.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script>
+    $('#identifier').collapse('hide')
+</script>
 </body>
 </html>
